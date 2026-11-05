@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Reports
+reports/
+
+# Playwright cache
+.playwright/
+
+# VS Code
+.vscode/
