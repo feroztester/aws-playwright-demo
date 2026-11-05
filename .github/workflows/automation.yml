@@ -28,8 +28,15 @@ jobs:
 
       - name: Install Playwright Browser
         run: |
-          python -m playwright install chromium
+          python -m playwright install --with-deps chromium
 
       - name: Execute Framework
         run: |
           python app.py
+
+      - name: Upload HTML Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Execution-Report
+          path: reports/test_report.html
