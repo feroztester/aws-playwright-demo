@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 class ReportGenerator:
 
@@ -64,6 +65,8 @@ class ReportGenerator:
         </body>
         </html>
         """
+
+        os.makedirs("reports", exist_ok=True)
 
         with open("reports/test_report.html", "w") as report:
             report.write(html_report)
