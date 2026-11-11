@@ -20,7 +20,7 @@ with sync_playwright() as p:
 
     page.goto("https://iniapro.relevantz.com/")
 
-    print("\n========================================")
+    print("\n=======================================")
     print("PLAYWRIGHT VALIDATION")
     print("========================================")
     print("Browser Launched Successfully")
